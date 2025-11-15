@@ -1,0 +1,17 @@
+{
+  "name": "encrypted-telegram-prediction-market",
+  "version": "1.0.0",
+  "description": "E2EE prediction market bot with Telegram integration",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:bot\" \"npm run dev:server\" \"npm run dev:mini-app\"",
+    "dev:bot": "cd bot && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev:mini-app": "cd mini-app && npm run dev",
+    "build": "npm run build:mini-app && npm run build:contracts",
+    "build:mini-app": "cd mini-app && npm run build",
+    "build:contracts": "cd contracts && npm run compile"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

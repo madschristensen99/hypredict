@@ -1,0 +1,10 @@
+{
+  "name": "encryption-module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {}
+}
